@@ -33,10 +33,10 @@ app.post("/", (req, res) => {
   });
 
   const jsonData = JSON.stringify(data);
-  const url = "https://us13.api.mailchimp.com/3.0/lists/dbf001cba3";
+  const url = "https://us12.api.mailchimp.com/3.0/lists/f3056e7409";
   const options = {
     method: "POST",
-    auth: "neeraj:448c851d471027f823cd95c5f197c3af-us13",
+    auth: "neeraj:34e5df74c74b286a5bd1d32d80d8e48f-us12",
   };
   const request = https.request(url, options, (response) => {
     if (response.statusCode === 200) {
@@ -59,3 +59,8 @@ app.get("/success", (res, req) => {
 app.listen(process.env.PORT || 3000, () => {
   console.log(`Server is running at 3000`);
 });
+
+
+//f3056e7409
+
+// 34e5df74c74b286a5bd1d32d80d8e48f-us12
